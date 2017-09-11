@@ -13,7 +13,7 @@
 /* ------ fetch API to translate wordfrom YANDEX ----- */
 
 var form = document.getElementById('form')
-var translatedWord = document.getElementsByClassName('translatedWord')[0]
+var translatedWord = document.getElementsByClassName('translatedWord')
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -27,9 +27,9 @@ var endpoint = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trns
           .then((response) => {
             return response.json()
             .then((translateData) => {
-              var section = document.getElementById('tWord');
-              var newh1 = document.createElement('h1');
-              newh1.innerHTML = 'translateData.text["0"]';
+              var sectiontag = document.getElementById('tWord');
+              var newH1 = document.createElement('h1');
+              newH1.innerHTML = translateData.text["0"];
 
 console.log(translateData.text["0"]);
 
@@ -42,7 +42,7 @@ console.log(translateData.text["0"]);
  //
  //
  //
- // fetch('https://api.unsplash.com/search/photos/' + wInput)
+ // fetch(etwo)
  //    		.then((response) => {
  //      		return response.json()
  //      			.then((imgdata) => {
