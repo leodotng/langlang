@@ -1,23 +1,8 @@
-/* JAVASCRIPT HERE WILL ACCOMPLISH TWO THINGS,
-
-1.) DO A FETCH API CALL TO YANDEX API TO TRANSLATE INPUT WORD TO 8 LANGUAGES
-2.) PASS SAME INPUT WORD TO UNSPLASH API TO DISPLAY PHOTO OF WORD
-
-/*
-
-
-
-
-
-
-/* ------ fetch API to translate wordfrom YANDEX ----- */
-
 var form = document.getElementById('form')
-var translatedWord = document.getElementsByClassName('translatedWord')
+//var translatedWord = document.getElementsByClassName('translatedWord')
 
 form.addEventListener('submit', (event) => {
 event.preventDefault();
-
 
 /* SPANISH FETCH */
 var wInput = document.getElementById('w-input').value;
@@ -32,9 +17,7 @@ var endpointes = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                     var test = document.getElementById('tWord')
                     test.append(newH1)
 
-
-                    var endpointfr = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-fr&text=' + wInput;
-
+  var endpointfr = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-fr&text=' + wInput;
 
 /* FRENCH FETCH */
 
@@ -87,11 +70,7 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
         })
 
 /* CHINESE FETCH */
-    var endpointzh = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-zh&text=' + wInput + '&options=1';
-
-
-
-
+    var endpointzh = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-zh&text=' + wInput;
                           fetch(endpointzh)
                         .then((response) => {
                           return response.json()
@@ -100,16 +79,11 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                           newH1.innerHTML = translateDataFive.text["0"];
                             var test = document.getElementById('tWordFive')
                           test.append(newH1)
-
             })
             })
 
 /* PORTUGESE FETCH */
     var endpointpt = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-pt&text=' + wInput;
-
-
-
-
                       fetch(endpointpt)
                       .then((response) => {
                       return response.json()
@@ -124,10 +98,6 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
 
 /* ITALIAN FETCH */
     var endpointit = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-it&text=' + wInput;
-
-
-
-
             fetch(endpointit)
             .then((response) => {
             return response.json()
@@ -136,15 +106,10 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
             newH1.innerHTML = translateDataSeven.text["0"];
             var test = document.getElementById('tWordSeven')
             test.append(newH1)
-
               })
             })
-
 /* RUSSIAN FETCH */
             var endpointru = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ru&text=' + wInput;
-
-
-
 
                     fetch(endpointru)
                     .then((response) => {
@@ -158,51 +123,21 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                       })
                     })
 
-// var translatephoto = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ru&text='  263f8444d810b007cfea8a0edda8dc06f8d4f7926591591465db68a774fe1f7b + wInput;
-//                     // fetch(etwo)
-//                     //    		.then((response) => {
-                    //      		return response.json()
-                    //      			.then((imgdata) => {
-                    //            console.log(imgdata);
-                    //            var contenttwo = document.getElementsByClassName('contenttwo')[0]
-                    //            var quoteImg = document.createElement('img')
-                    //            var imgURL = imgdata.urls.raw;
-                    //            quoteImg.setAttribute('src', imgURL)
-                    //            tWord.append(quoteImg)
-                    //        })
-                    //      })
+var translatePhoto = 'https://pixabay.com/api/?key=6336378-c6bc1f25ce36a86d62e91f43e&q=' + wInput;
+                     fetch(translatePhoto)
+                        		.then((response) => {
+                         		return response.json()
+                         			.then((photoOutput) => {
+                        var newImage = document.createElement('img')
+                    newImage.innerHTML = photoOutput.hits["0"]
+                    // console.log(photoOutput.hits["0"].webformatURL);
+                              newImage.setAttribute('src', newImage)
+                               tWord.append(newImage)
 
-
-
-
-
-
+                           })
+                         })
 
 
             })
           })
         })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- //
- //
- //
