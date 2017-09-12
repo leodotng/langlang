@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="semantic.min.css">
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 <script src="semantic.min.js"></script>
 <link rel="stylesheet" type="text/css" href="main.css">
@@ -63,10 +61,19 @@
     <div class="ui massive icon input">
       <i class="search icon"></i>
     </div>
-    <button type="submit" label="translate" class="ui massive primary basic button">TRANSLATE</button>
+    <button type="submit" label="translate" class="ui massive primary basic button">TRANSLATE</button><br>
+
 </form>
+<br>
+
+
 </section>
-<br><br><br>
+
+
+  <div class="circular ui image photoSpot"></div>
+
+
+
 <!--     END SEARCH INPUT FIELD [HERE]   -->
 <div class="ui grid">
 <section class="four wide column">
@@ -75,7 +82,7 @@
     SPANISH <i class="spain flag"></i>
   </div>
   <div class="content photoSpot">
-    <p id="tWord" class="photoSpot"></p>
+    <p id="tWord" class=""></p>
   </div>
 </div>
 
@@ -207,6 +214,7 @@
 <!-- YANDEX API DISPLAY REQUIREMENTS -->
 
 <h3> Powered by Yandex.Translate </h3><br>
+<button type="button" value="Refresh Page" onClick="window.location.reload()" class="ui massive primary basic button">RESET</button>
 <h3><a href="http://translate.yandex.com/">http://translate.yandex.com/</a></h3>
 
 <!-- END YANDEX API DISPLAY REQUIREMENTS -->
