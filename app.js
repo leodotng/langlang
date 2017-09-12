@@ -1,5 +1,5 @@
 var form = document.getElementById('form')
-//var translatedWord = document.getElementsByClassName('translatedWord')
+var photoSpot = document.getElementsByClassName('photoSpot')
 
 form.addEventListener('submit', (event) => {
 event.preventDefault();
@@ -35,10 +35,6 @@ var endpointes = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
 
 /* JAPANESE FETCH */
 var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ja&text=' + wInput;
-
-
-
-
                   fetch(endpointja)
                 .then((response) => {
                   return response.json()
@@ -125,14 +121,15 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
 
 var translatePhoto = 'https://pixabay.com/api/?key=6336378-c6bc1f25ce36a86d62e91f43e&q=' + wInput;
                      fetch(translatePhoto)
-                        		.then((response) => {
-                         		return response.json()
-                         			.then((photoOutput) => {
-                        var newImage = document.createElement('img')
-                    newImage.innerHTML = photoOutput.hits["0"]
-                    // console.log(photoOutput.hits["0"].webformatURL);
-                              newImage.setAttribute('src', newImage)
-                               tWord.append(newImage)
+                    .then((response) => {
+                    return response.json()
+                   .then((photoOutput) => {
+                    var newImage = document.createElement('img')
+                    newImage.setAttribute('src', newImage)
+                    newImage.innerHTML = photoOutput.hits["0"].webformatURL;
+                    //  console.log(photoOutput.hits["0"].webformatURL);
+                      var test = document.getElementById('tWord')
+                               test.append(newImage)
 
                            })
                          })
@@ -141,3 +138,9 @@ var translatePhoto = 'https://pixabay.com/api/?key=6336378-c6bc1f25ce36a86d62e91
             })
           })
         })
+
+
+
+
+
+        
