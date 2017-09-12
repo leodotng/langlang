@@ -15,7 +15,7 @@ form.addEventListener('submit', event => {
 			var newH1 = document.createElement('h1');
 			newH1.innerHTML = translateData.text['0'];
 			var test = document.getElementById('tWord');
-			// test.innerHTML = '';
+			test.innerHTML = '';
 			test.append(newH1);
 
 			var endpointfr =

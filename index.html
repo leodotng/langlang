@@ -41,12 +41,20 @@
   </head>
   <body><center>
 
+    <div class="">
+<img src="langlang.png" height="200" width="200"><br>
+
 <!--     Title [HERE]   -->
-<img src="logo.jpg"><br>
-<!--     END Title [HERE]   -->
-<!--     LOGO [HERE]   -->
-<img src="langlang.png" heigh="250" width="250">
+<img src="logo.png" height="200" width="900"><br>
+</div>
+</div>
 <!--     END LOGO [HERE]   -->
+<div class="ui grid two wide column centered">
+<div class="ui image two wide column" id="container">
+      <div class="fixpic two wide column" id="photoSpot">
+      </div>
+</div>
+</div>
 <br>
 <header>
   <h3><strong><p> LangLang the Loris Helps You Learn Lots of Languages Simultaneously!</p></h3></strong>
@@ -54,23 +62,22 @@
 <br>
 
 <!--     SEARCH INPUT FIELD [HERE]   -->
-<section>
+<section class="ui column">
 <form method="get" id="form" class="ui massive icon input"><br>
     <input class="input" type="text" id="w-input" style="height:70px;font-size:30pt;" placeholder="Enter Word Here"><br></input><br>
     <div class="ui massive icon input">
       <i class="search icon"></i>
     </div>
-    <button type="submit" label="translate" class="ui massive primary basic button">TRANSLATE</button><br>
+    <button type="submit" label="translate" class="ui massive primary basic button">TRANSLATE</button>
 
 </form>
-<br>
+
 
 
 </section>
 
-
-  <div class="circular ui image container" id="photoSpot"></div>
-
+<div>
+</div>
 
 
 <!--     END SEARCH INPUT FIELD [HERE]   -->
@@ -81,7 +88,7 @@
     SPANISH <i class="spain flag"></i>
   </div>
   <div class="content">
-    <p id="tWord" class=""></p>
+    <p id="tWord"></p>
   </div>
 </div>
 
@@ -210,11 +217,12 @@
 <!-- END DISPLAY TRANSLATED WORDS -->
 
 
-<!-- YANDEX API DISPLAY REQUIREMENTS -->
 
-<h3> Powered by Yandex.Translate </h3><br>
+<!-- YANDEX API DISPLAY REQUIREMENTS -->
+<footer>
+<h3 class="maincss"> Powered by Yandex.Translate </h3><br>
 <button type="button" value="Refresh Page" onClick="window.location.reload()" class="ui massive primary basic button">RESET</button>
-<h3><a href="http://translate.yandex.com/">http://translate.yandex.com/</a></h3>
+<h3 class="maincss"><a href="http://translate.yandex.com/">http://translate.yandex.com/</a></h3>
 
 <!-- END YANDEX API DISPLAY REQUIREMENTS -->
 
@@ -228,9 +236,6 @@
 <article>
 <aside>
 <footer>
-
-
-
 <article>
 <aside>
 <details>
@@ -245,11 +250,6 @@
 <summary>
 <time>
 -->
-
-
-
-
-<footer>
   <script src="app.js" charset="utf-8"></script>
 </footer>
 </center>
