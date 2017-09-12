@@ -1,6 +1,15 @@
 var form = document.getElementById('form');
 var photoSpot = document.getElementsByClassName('photoSpot');
 
+
+function myFunction() {
+
+  responsiveVoice.speak("hello world", "UK English Male", {pitch: 2});
+  document.getElementById("demo").innerHTML = "Hello World";
+
+}
+
+
 form.addEventListener('submit', event => {
 	event.preventDefault();
 
