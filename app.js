@@ -124,12 +124,13 @@ var translatePhoto = 'https://pixabay.com/api/?key=6336378-c6bc1f25ce36a86d62e91
                     .then((response) => {
                     return response.json()
                    .then((photoOutput) => {
-                    var newImage = document.createElement('img')
-                    newImage.setAttribute('src', newImage)
-                    newImage.innerHTML = photoOutput.hits["0"].webformatURL;
-                    //  console.log(photoOutput.hits["0"].webformatURL);
-                      var test = document.getElementById('tWord')
-                               test.append(newImage)
+                     console.log(photoOutput.hits["0"].userImageURL[0]);
+                    // var newImage = document.createElement('img')
+                    // newImage.setAttribute('src', newImage)
+                    // newImage.innerHTML = photoOutput.hits["0"].webformatURL;
+                    // //  console.log(photoOutput.hits["0"].webformatURL);
+                    //   var test = document.getElementById('tWord')
+                    //            test.append(newImage)
 
                            })
                          })
@@ -140,7 +141,15 @@ var translatePhoto = 'https://pixabay.com/api/?key=6336378-c6bc1f25ce36a86d62e91
         })
 
 
-
-
-
-        
+/*
+fetch('https://api.unsplash.com/photos/random/?client_id=263f8444d810b007cfea8a0edda8dc06f8d4f7926591591465db68a774fe1f7b')
+       .then((response) => {
+         return response.json()
+           .then((imgdata) => {
+           console.log(imgdata);
+           var contenttwo = document.getElementsByClassName('contenttwo')[0]
+           var quoteImg = document.createElement('img')
+           var imgURL = imgdata.urls.raw;
+           quoteImg.setAttribute('src', imgURL)
+           contenttwo.append(quoteImg)
+*/
