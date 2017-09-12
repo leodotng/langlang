@@ -192,8 +192,8 @@ form.addEventListener('submit', event => {
 					var newImage = document.createElement('img');
 					newImage.setAttribute('src', photoOutput.hits['0'].webformatURL);
 
-					console.log(photoOutput);
-					var test = document.getElementById('tWord');
+
+					var test = document.getElementById('photoSpot');
           test.innerHTML = '';
 					test.append(newImage);
 				});
@@ -201,16 +201,3 @@ form.addEventListener('submit', event => {
 		});
 	});
 });
-
-/*
-fetch('https://api.unsplash.com/photos/random/?client_id=263f8444d810b007cfea8a0edda8dc06f8d4f7926591591465db68a774fe1f7b')
-       .then((response) => {
-         return response.json()
-           .then((imgdata) => {
-           console.log(imgdata);
-           var contenttwo = document.getElementsByClassName('contenttwo')[0]
-           var quoteImg = document.createElement('img')
-           var imgURL = imgdata.urls.raw;
-           quoteImg.setAttribute('src', imgURL)
-           contenttwo.append(quoteImg)
-*/
