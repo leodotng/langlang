@@ -10,12 +10,38 @@
 <script src="semantic.min.js"></script>
 <link rel="stylesheet" type="text/css" href="main.css">
     <title>langlang.io</title>
-    <i class="align justify icon" align="left" style="height:60px;"></i>
+
+
+<nav>
+    <div class="ui massive menu">
+        <i class="align justify huge icon" align="left"></i>
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    My Scoreboard
+  </a>
+  <div class="right menu">
+    <div class="ui dropdown item">
+    <div class="ui primary button">Login</div>
+      <div class="menu">
+
+      </div>
+
+    </div>
+    <div class="item">
+        <div class="ui primary button">Sign Up</div>
+    </div>
+  </div>
+</div>
+</nav>
+
+
   </head>
   <body><center>
 
 <!--     Title [HERE]   -->
-<h1>LangLang.IO</h1>
+<h1>langlang.io</h1>
 <!--     END Title [HERE]   -->
 <!--     LOGO [HERE]   -->
 <img src="langlang.png" heigh="250" width="250">
@@ -31,7 +57,7 @@
 
 <!--     END DISPLAY COUNTRY FLAG [HERE]   -->
 <!--     SEARCH INPUT FIELD [HERE]   -->
-<nav>
+<section>
 <form method="get" id="form" class="ui massive icon input"><br>
     <input class="input" type="text" id="w-input" style="height:70px;font-size:30pt;" placeholder="Enter Word Here"><br></input><br>
     <div class="ui massive icon input">
@@ -39,7 +65,7 @@
     </div>
     <button type="submit" label="translate" class="ui massive primary basic button">TRANSLATE</button>
 </form>
-</nav>
+</section>
 <br><br><br>
 <!--     END SEARCH INPUT FIELD [HERE]   -->
 <div class="ui grid">
@@ -49,7 +75,7 @@
     SPANISH <i class="spain flag"></i>
   </div>
   <div class="content photoSpot">
-<p id="tWord" class="photoSpot"></p>
+    <p id="tWord" class="photoSpot"></p>
   </div>
 </div>
 

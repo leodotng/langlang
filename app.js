@@ -13,9 +13,11 @@ var endpointes = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                   return response.json()
                   .then((translateData) => {
                     var newH1 = document.createElement('h1');
-                    newH1.innerHTML = translateData.text;
+                    newH1.innerHTML = translateData.text["0"];
                     var test = document.getElementById('tWord')
+                    test.innerHTML = '';
                     test.append(newH1)
+
 
   var endpointfr = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-fr&text=' + wInput;
 
@@ -28,6 +30,7 @@ var endpointes = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                   var newH1 = document.createElement('h1');
                   newH1.innerHTML = translateDataTwo.text["0"];
                   var test = document.getElementById('tWordTwo')
+                  test.innerHTML = '';
                   test.append(newH1)
 
                   })
@@ -41,7 +44,8 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                   .then((translateDataThree) => {
                   var newH1 = document.createElement('h1');
                   newH1.innerHTML = translateDataThree.text["0"];
-                    var test = document.getElementById('tWordThree')
+                  var test = document.getElementById('tWordThree')
+                  test.innerHTML = '';
                   test.append(newH1)
 
     })
@@ -60,6 +64,7 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                       var newH1 = document.createElement('h1');
                       newH1.innerHTML = translateDataFour.text["0"];
                         var test = document.getElementById('tWordFour')
+                      test.innerHTML = '';
                       test.append(newH1)
 
         })
@@ -74,6 +79,7 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                           var newH1 = document.createElement('h1');
                           newH1.innerHTML = translateDataFive.text["0"];
                             var test = document.getElementById('tWordFive')
+                            test.innerHTML = '';
                           test.append(newH1)
             })
             })
@@ -87,6 +93,7 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                         var newH1 = document.createElement('h1');
                         newH1.innerHTML = translateDataSix.text["0"];
                       var test = document.getElementById('tWordSix')
+                      test.innerHTML = '';
                       test.append(newH1)
 
                     })
@@ -101,6 +108,7 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
             var newH1 = document.createElement('h1');
             newH1.innerHTML = translateDataSeven.text["0"];
             var test = document.getElementById('tWordSeven')
+            test.innerHTML = '';
             test.append(newH1)
               })
             })
@@ -114,6 +122,7 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                     var newH1 = document.createElement('h1');
                     newH1.innerHTML = translateDataEight.text["0"];
                     var test = document.getElementById('tWordEight')
+                    test.innerHTML = '';
                     test.append(newH1)
 
                       })
@@ -124,13 +133,14 @@ var translatePhoto = 'https://pixabay.com/api/?key=6336378-c6bc1f25ce36a86d62e91
                     .then((response) => {
                     return response.json()
                    .then((photoOutput) => {
-                     console.log(photoOutput.hits["0"].userImageURL[0]);
-                    // var newImage = document.createElement('img')
-                    // newImage.setAttribute('src', newImage)
-                    // newImage.innerHTML = photoOutput.hits["0"].webformatURL;
-                    // //  console.log(photoOutput.hits["0"].webformatURL);
-                    //   var test = document.getElementById('tWord')
-                    //            test.append(newImage)
+                    //console.log(photoOutput);
+                    var newImage = document.createElement('img')
+                    newImage.setAttribute('src', newImage)
+                    newImage.innerHTML = photoOutput.hits["0"].webformatURL;
+                    console.log(photoOutput.hits["0"]);
+                    var test = document.getElementById('tWord')
+                    test.innerHTML = '';
+                          test.append(newImage)
 
                            })
                          })
