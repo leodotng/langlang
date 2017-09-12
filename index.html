@@ -2,6 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="semantic.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic.min.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
     <title>langlang.io</title>
   </head>
   <body><center>
@@ -12,36 +19,140 @@
 <!--     LOGO [HERE]   -->
 <img src="langlang.png" heigh="250" width="250">
 <!--     END LOGO [HERE]   -->
+<br>
+
+<br>
+<!--     DISPLAY COUNTRY FLAG [HERE]   -->
+
+
+
+<!--     END DISPLAY COUNTRY FLAG [HERE]   -->
 <!--     SEARCH INPUT FIELD [HERE]   -->
 <form method="get" id="form">
-    <input class="input" type="text" id="w-input" style="height:60px;font-size:30pt;" placeholder="Enter Word Here"></input><br>
-    <button type="submit" label="translate">TRANSLATE</button>
+    <input class="input" type="text" id="w-input" style="height:60px;font-size:30pt;align:center;" placeholder="Enter Word Here"></input><br>
+    <button type="submit" label="translate" class="ui massive primary basic button">TRANSLATE</button>
 </form>
-
+<br>
 <!--     END SEARCH INPUT FIELD [HERE]   -->
-<section id="tWord">
+<div class="ui grid">
+<section class="four wide column">
+  <div class="ui centered card">
+  <div class="image">
+    SPANISH <i class="spain flag"></i>
+  </div>
+  <div class="content">
+<p id="tWord"></p>
+  </div>
+</div>
+
+
 </section>
 
-<section id="tWordTwo">
+<br>
+<section class="four wide column">
+
+  <div class="ui centered card">
+  <div class="image">
+    FRENCH <i class="france flag"></i>
+  </div>
+  <div class="content">
+    <p id="tWordTwo"></p>
+  </div>
+</div>
+
+
+</section>
+<br>
+
+<section class="four wide column">
+
+  <div class="ui centered card">
+  <div class="image">
+    JAPANESE <i class="japan flag"></i>
+  </div>
+  <div class="content">
+    <p id="tWordThree"></p>
+  </div>
+</div>
+
+
+</section>
+<br>
+<section class="four wide column">
+
+  <div class="ui centered card">
+  <div class="image">
+    GERMAN <i class="germany flag"></i>
+  </div>
+  <div class="content">
+    <p id="tWordFour"></p>
+  </div>
+</div>
+
+
+</section>
+<br>
+
+<section class="four wide column">
+
+  <div class="ui centered card">
+  <div class="image">
+    CHINESE <i class="china flag"></i>
+  </div>
+  <div class="content">
+    <p id="tWordFive"></p>
+  </div>
+</div>
+
+
 </section>
 
-<section id="tWordThree">
+<br>
+<section class="four wide column">
+
+  <div class="ui centered card">
+  <div class="image">
+  <i class="brazil flag"></i>  PORTUGESE  <i class="portugal flag"></i>
+  </div>
+  <div class="content">
+    <p id="tWordSix"></p>
+  </div>
+</div>
+
+
+</section>
+<br>
+
+<section class="four wide column">
+
+  <div class="ui centered card">
+  <div class="image">
+    ITALIAN <i class="italy flag"></i>
+  </div>
+  <div class="content">
+    <p id="tWordSeven"></p>
+  </div>
+</div>
+
+
+</section>
+<br>
+<section class="four wide column">
+
+  <div class="ui centered card">
+  <div class="image">
+    RUSSIAN <i class="russia flag"></i>
+  </div>
+  <div class="content">
+    <p id="tWordEight"></p>
+  </div>
+</div>
+
+
 </section>
 
-<section id="tWordFour">
-</section>
 
-<section id="tWordFive">
-</section>
-
-<section id="tWordSix">
-</section>
-
-<section id="tWordSeven">
-</section>
-
-<section id="tWordEight">
-</section>
+</div>
 
 
 <!--     CLICKABLE BUTTON TO TRANSLATE [HERE]   -->
@@ -49,17 +160,7 @@
 
 <!--     END CLICKABLE BUTTON TO TRANSLATE [HERE]   -->
 
-<!--     DISPLAY COUNTRY FLAG [HERE]   -->
-<img src="flags/france.png">
-<img src="flags/china.png">
-<img src="flags/germany.png">
-<img src="flags/italy.png"><br>
-<img src="flags/japan.png">
-<img src="flags/portugal.png">
-<img src="flags/russia.png">
-<img src="flags/spain.png">
 
-<!--     END DISPLAY COUNTRY FLAG [HERE]   -->
 
 
 <!-- DISPLAY TRANSLATED WORDS -->

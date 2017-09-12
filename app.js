@@ -18,6 +18,8 @@ var translatedWord = document.getElementsByClassName('translatedWord')
 form.addEventListener('submit', (event) => {
 event.preventDefault();
 
+
+/* SPANISH FETCH */
 var wInput = document.getElementById('w-input').value;
 var endpointes = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-es&text=' + wInput;
 
@@ -34,7 +36,7 @@ var endpointes = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                     var endpointfr = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-fr&text=' + wInput;
 
 
-
+/* FRENCH FETCH */
 
         fetch(endpointfr)
                 .then((response) => {
@@ -48,6 +50,7 @@ var endpointes = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                   })
                   })
 
+/* JAPANESE FETCH */
 var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ja&text=' + wInput;
 
 
@@ -68,7 +71,7 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
 
     var endpointde = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-de&text=' + wInput;
 
-
+/* GERMAN FETCH */
 
 
                       fetch(endpointde)
@@ -83,7 +86,8 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
         })
         })
 
-    var endpointzh = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-zh&text=' + wInput;
+/* CHINESE FETCH */
+    var endpointzh = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-zh&text=' + wInput + '&options=1';
 
 
 
@@ -100,6 +104,7 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
             })
             })
 
+/* PORTUGESE FETCH */
     var endpointpt = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-pt&text=' + wInput;
 
 
@@ -117,6 +122,7 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                     })
                     })
 
+/* ITALIAN FETCH */
     var endpointit = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-it&text=' + wInput;
 
 
@@ -134,7 +140,7 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
               })
             })
 
-
+/* RUSSIAN FETCH */
             var endpointru = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ru&text=' + wInput;
 
 
@@ -152,7 +158,19 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
                       })
                     })
 
-
+// var translatephoto = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ru&text='  263f8444d810b007cfea8a0edda8dc06f8d4f7926591591465db68a774fe1f7b + wInput;
+//                     // fetch(etwo)
+//                     //    		.then((response) => {
+                    //      		return response.json()
+                    //      			.then((imgdata) => {
+                    //            console.log(imgdata);
+                    //            var contenttwo = document.getElementsByClassName('contenttwo')[0]
+                    //            var quoteImg = document.createElement('img')
+                    //            var imgURL = imgdata.urls.raw;
+                    //            quoteImg.setAttribute('src', imgURL)
+                    //            tWord.append(quoteImg)
+                    //        })
+                    //      })
 
 
 
@@ -188,15 +206,3 @@ var endpointja = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=tr
  //
  //
  //
- // fetch(etwo)
- //    		.then((response) => {
- //      		return response.json()
- //      			.then((imgdata) => {
- //            console.log(imgdata);
- //            var contenttwo = document.getElementsByClassName('contenttwo')[0]
- //            var quoteImg = document.createElement('img')
- //            var imgURL = imgdata.urls.raw;
- //            quoteImg.setAttribute('src', imgURL)
- //            tWord.append(quoteImg)
- //        })
- //      })
