@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Voice Test</title>
+
+
+<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+  </head>
+  <body>
+
+    <section class="ui column">
+    <form method="get" id="form" class="ui massive icon input"><br>
+      <input class="input" type="text" id="w-input" style="height:70px;font-size:30pt;" placeholder="Enter Word Here"><br>
+    </input><br>
+
+
+        <div class="">
+
+        </div>
+        <button type="submit" label="translate" class="">TRANSLATE</button>
+
+
+
+
+    </section>
+
+    <!-- <div class="content">
+        <p id="tWord">
+
+
+</p>
+<button type="submitTwo">Click me</button>
+</div>
+
+-->
+
+
+<p>Example list:</p>
+
+<ul><li id="tWord"></li><li id="item2">Tea (second li)</li></ul>
+
+<p>Click the button to get the HTML content of the previous sibling of the second list item.</p>
+
+
+
+
+<p id="demo"></p>
+
+<button onclick="myFunction()">Test</button>
+<script>
+function myFunction() {
+    var x = document.getElementById("item2").previousSibling.innerText;
+
+    document.getElementById("demo").innerText = x;
+    responsiveVoice.speak(x, "Spanish Female");
+}
+</script>
+
+
+
+
+
+
+
+<footer>
+  <script src="app.js" charset="utf-8"></script>
+
+
+  </footer>
+
+  </body>
+</html>
