@@ -20,7 +20,6 @@ form.addEventListener('submit', event => {
 
 
 
-
 			var endpointfr =
 				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-fr&text=' +
 				wInput;
@@ -205,10 +204,70 @@ form.addEventListener('submit', event => {
 	});
 });
 
+/*====================TEXT TO SPEAK ===================*/
 
-function spanFemale() {
-    var x = document.getElementById("tWord2").previousSibling.innerText;
 
-    //document.getElementById("demo").innerText = x;
+/*====================SPANISH FEMALE SPEAKING ===================*/
+
+function spanishFemale() {
+    var x = document.getElementById("tWordSpanish").previousSibling.innerText;
     responsiveVoice.speak(x, "Spanish Female");
 }
+/*====================END SPANISH FEMALE SPEAKING ================*/
+
+/*====================FRENCH FEMALE SPEAKING ===================*/
+
+function frenchFemale() {
+    var x = document.getElementById("tWordFrench").previousSibling.innerText;
+    responsiveVoice.speak(x, "French Female");
+}
+/*====================END FRENCH FEMALE SPEAKING ================*/
+
+/*====================JAPANESE FEMALE SPEAKING ===================*/
+
+function japaneseFemale() {
+    var x = document.getElementById("tWordJapanese").previousSibling.innerText;
+    responsiveVoice.speak(x, "Japanese Female");
+}
+/*====================END JAPANESE FEMALE SPEAKING ================*/
+
+/*====================GERMAN FEMALE SPEAKING ===================*/
+
+function germanFemale() {
+    var x = document.getElementById("tWordGerman").previousSibling.innerText;
+    responsiveVoice.speak(x, "Deutsch Female");
+}
+/*====================END GERMAN FEMALE SPEAKING ================*/
+
+/*====================CHINESE FEMALE SPEAKING ===================*/
+
+function chineseFemale() {
+    var x = document.getElementById("tWordChinese").previousSibling.innerText;
+    responsiveVoice.speak(x, "Chinese Female");
+}
+/*====================END CHINESE FEMALE SPEAKING ================*/
+
+/*====================PORTUGESE FEMALE SPEAKING ===================*/
+
+function portFemale() {
+    var x = document.getElementById("tWordPort").previousSibling.innerText;
+    responsiveVoice.speak(x, "Brazilian Portuguese Female");
+// Switch from Brazilian to Just regular Portuguese by Deleting Brazilian
+}
+/*====================END PORTUGESE FEMALE SPEAKING ================*/
+
+/*====================PORTUGESE FEMALE SPEAKING ===================*/
+
+function italianFemale() {
+    var x = document.getElementById("tWordItalian").previousSibling.innerText;
+    responsiveVoice.speak(x, "Italian Female");
+}
+/*====================END PORTUGESE FEMALE SPEAKING ================*/
+
+/*====================RUSSIAN FEMALE SPEAKING ===================*/
+
+function russianFemale() {
+    var x = document.getElementById("tWordRussian").previousSibling.innerText;
+    responsiveVoice.speak(x, "Russian Female");
+}
+/*====================END RUSSIAN FEMALE SPEAKING ================*/
