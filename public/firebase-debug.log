@@ -1,0 +1,25 @@
+[debug] [2017-09-13T20:12:27.165Z] ----------------------------------------------------------------------
+[debug] [2017-09-13T20:12:27.167Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-09-13T20:12:27.167Z] CLI Version:   3.10.1
+[debug] [2017-09-13T20:12:27.167Z] Platform:      darwin
+[debug] [2017-09-13T20:12:27.167Z] Node Version:  v9.0.0-pre
+[debug] [2017-09-13T20:12:27.168Z] Time:          Wed Sep 13 2017 14:12:27 GMT-0600 (MDT)
+[debug] [2017-09-13T20:12:27.168Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-13T20:12:27.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-13T20:12:27.177Z] > authorizing via signed-in user
+[debug] [2017-09-13T20:12:27.179Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-09-13T20:12:27.179Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/or0xfGG1VfPiOBGexDeH_m2BL8WLkK2R-la8xUc0600',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Sep 13 2017 14:12:27 GMT-0600 (MDT)
+[debug] [2017-09-13T20:12:27.425Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-13T20:12:27.439Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/langlang-4072a  
+ Wed Sep 13 2017 14:12:27 GMT-0600 (MDT)
+[debug] [2017-09-13T20:12:27.725Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-13T20:12:27.726Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/langlang-4072a/tokens  
+ Wed Sep 13 2017 14:12:27 GMT-0600 (MDT)
+[debug] [2017-09-13T20:12:28.244Z] <<< HTTP RESPONSE 200
+[info] 
