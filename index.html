@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="semantic.min.css">
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
@@ -48,14 +48,29 @@
 <img src="langlang.png" height="200" width="200"><br>
 
 <!--     Title [HERE]   -->
-<img src="logo.png" height="200" width="900"><br>
+<img src="logo.png"><br>
 </div>
 </div>
 <!--     END LOGO [HERE]   -->
-<div class="ui grid two wide column centered">
+<!-- <div class="ui grid two wide column centered">
 <div class="ui image two wide column" id="container">
       <div class="fixpic two wide column" id="photoSpot">
       </div>
+-->
+
+      <div class="ui card">
+        <div class="content">
+          <div class="header">Photo</div>
+          <div class="meta"></div>
+          <div class="container description fixpic" id="photoSpot">
+            <p>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
 </div>
 </div>
 <br>
@@ -82,10 +97,7 @@
 
 
 <div>
-  <!-- SPANISH SPEAK BUTTON CODE -->
 
-  <button onclick="speakAllTheLanguages()" class="ui massive primary basic button">Speak ALL</button>
-  <!-- END SPANISH SPEAK BUTTON CODE -->
 </div>
 
 
@@ -235,21 +247,10 @@
 
 </div>
 
+<!-- SPEAK ALL BUTTON CODE -->
 
-<!--     CLICKABLE BUTTON TO TRANSLATE [HERE]   -->
-
-
-<!--     END CLICKABLE BUTTON TO TRANSLATE [HERE]   -->
-
-
-
-
-<!-- DISPLAY TRANSLATED WORDS -->
-
-
-
-<!-- END DISPLAY TRANSLATED WORDS -->
-
+<button onclick="speakAllTheLanguages()" class="ui massive primary basic button">Speak ALL</button>
+<!-- END SPANISH SPEAK ALL BUTTON CODE -->
 
 
 <!-- YANDEX API DISPLAY REQUIREMENTS -->
