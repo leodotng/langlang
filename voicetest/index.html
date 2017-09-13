@@ -43,8 +43,6 @@
 <p>Click the button to get the HTML content of the previous sibling of the second list item.</p>
 
 
-
-
 <p id="demo"></p>
 
 <button onclick="myFunction()">Test</button>
@@ -52,7 +50,7 @@
 function myFunction() {
     var x = document.getElementById("item2").previousSibling.innerText;
 
-    document.getElementById("demo").innerText = x;
+  //  document.getElementById("demo").innerText = x;
     responsiveVoice.speak(x, "Spanish Female");
 }
 </script>

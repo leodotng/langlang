@@ -204,3 +204,11 @@ form.addEventListener('submit', event => {
 		});
 	});
 });
+
+
+function spanFemale() {
+    var x = document.getElementById("tWord2").previousSibling.innerText;
+
+    //document.getElementById("demo").innerText = x;
+    responsiveVoice.speak(x, "Spanish Female");
+}
