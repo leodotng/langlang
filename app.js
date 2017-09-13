@@ -1,15 +1,6 @@
 var form = document.getElementById('form');
 var photoSpot = document.getElementsByClassName('photoSpot');
 
-
-function myFunction() {
-
-  responsiveVoice.speak("hello world", "UK English Male", {pitch: 2});
-  document.getElementById("demo").innerHTML = "Hello World";
-
-}
-
-
 form.addEventListener('submit', event => {
 	event.preventDefault();
 
@@ -26,6 +17,7 @@ form.addEventListener('submit', event => {
 			var test = document.getElementById('tWord');
 			test.innerHTML = '';
 			test.append(newH1);
+
 
 			var endpointfr =
 				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-fr&text=' +
