@@ -271,3 +271,15 @@ function russianFemale() {
     responsiveVoice.speak(x, "Russian Female");
 }
 /*====================END RUSSIAN FEMALE SPEAKING ================*/
+
+function speakAllTheLanguages() {
+spanishFemale();
+frenchFemale();
+japaneseFemale();
+germanFemale();
+chineseFemale();
+portFemale();
+italianFemale();
+russianFemale()
+
+}
