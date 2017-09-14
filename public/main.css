@@ -4,16 +4,9 @@ font-family: 'Open Sans', sans-serif;
 
 }
 
-/*.container {
-  height: 250px;
-  width: 250px;
-}*/
-
-/*#backgroundflag {
-  background-image: url("flags/spain.png");
-  position: relative;
-}*/
-
+input[type="text"] {
+    font-size:35px;
+}
 
 .fixpic{
    width: 400px;
@@ -30,8 +23,13 @@ padding-top: 10px;
 }
 
 #aftertranslate {
-padding-bottom: 15px;
-padding-top: 15px;
+padding-bottom: 30px;
+}
+
+#aftertranslate-two {
+padding-top: 35px;
+position: relative;
+padding-bottom: 30px;
 }
 
 #toptranslate {
