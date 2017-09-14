@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="semantic.min.css">
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 <script src="semantic.min.js"></script>
@@ -87,7 +87,7 @@
 
     <!--style="height:70px;font-size:30pt;" for search bar -->
     <div class="ui massive icon input">
-      <i class="search icon"></i>
+<i class="search icon"></i>
     </div>
     <button type="submit" label="translate" class="ui massive primary basic button">TRANSLATE</button>
 
@@ -112,7 +112,7 @@
     SPANISH <i class="spain flag"></i>
   </div>
   <div class="content">
-
+<p id="#bgflag"></p>
 <!-- SPANISH SPEAK BUTTON CODE -->
 <p id="tWord"></p><p id="tWordSpanish"></p>
 <button onclick="spanishFemale()" class="ui small primary basic button">Speak</button>
@@ -258,13 +258,25 @@
 
 <!-- YANDEX API DISPLAY REQUIREMENTS -->
 <footer>
-<h3 class="maincss"> Powered by Yandex.Translate </h3><br>
+
 <button type="button" value="Refresh Page" onClick="window.location.reload()" class="ui massive primary basic button">RESET</button>
-<h3 class="maincss"><a href="http://translate.yandex.com/">http://translate.yandex.com/</a></h3>
 
+
+<div class="ui stackable two column grid">
+      <div class="column">
+        <h3 class="maincss"> Powered by Yandex.Translate </h3><br>
+          <img src="yandex.png" height="70" width="150">
+          <h3 class="maincss"><a href="http://translate.yandex.com/">http://translate.yandex.com/</a></h3>
+      </div>
 <!-- END YANDEX API DISPLAY REQUIREMENTS -->
-
-
+<!-- BEGIN RESPONSIVEJS API DISPLAY REQUIREMENTS -->
+      <div class="column">
+          <h3 class="maincss"> Voice Speech Powered by ResponsiveVoiceJS </h3><br>
+            <img src="rvlogo.png" height="70" width="100">
+            <h3 class="maincss"><a href="https://responsivevoice.org/">https://responsivevoice.org/</a></h3>
+<!-- END RESPONSIVEJS API DISPLAY REQUIREMENTS -->
+      </div>
+</div>
 
 <!-- SEMANTIC HTML TAGS TO USE
 
@@ -290,6 +302,7 @@
 -->
   <script src="app.js" charset="utf-8"></script>
   <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  <script src="cdl-utils.js"></script>
 </footer>
 </center>
   </body>

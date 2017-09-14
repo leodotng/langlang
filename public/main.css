@@ -10,7 +10,10 @@
   width: 250px;
 }*/
 
-
+#bgflag {
+  background-image: url("flagpng/044-spain.png");
+  position: relative;
+}
 
 
 .fixpic{
