@@ -297,15 +297,19 @@
 
 <!-- SPEAK ALL BUTTON CODE -->
   <div class="ui column">
-      <div class=""  id="aftertranslate">
+      <div class="" id="aftertranslate">
       <button onclick="speakAllTheLanguages()" class="ui massive primary basic button">SPEAK ALL</button>
     </div>
 <!-- END SPEAK ALL BUTTON CODE -->
 
 
 <!-- YANDEX API DISPLAY REQUIREMENTS -->
-        <div class="column">
+        <div class="column" id="aftertranslate">
           <button type="button" value="Refresh Page" onClick="window.location.reload()" class="ui massive primary basic button">RESET</button>
+        </div>
+
+        <div class="column" id="aftertranslate">
+          <button type="button" value="Refresh Page" onClick="window.scrollTo(0, 0);" class="ui massive primary basic button">JUMP TO TOP</button>
         </div>
 </div>
 
