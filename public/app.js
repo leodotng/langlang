@@ -193,6 +193,30 @@ form.addEventListener('submit', event => {
 					});
 			});
 
+			/* GREEK FETCH */
+			var endpointel =
+				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-el&text=' +
+				wInput;
+
+			fetch(endpointel).then(response => {
+				return response
+					.json()
+					.then(translateDataNine => {
+						var newH1 = document.createElement(
+							'h1'
+						);
+						newH1.innerHTML =
+							translateDataNine.text[
+								'0'
+							];
+						var test = document.getElementById(
+							'tWordNine'
+						);
+						test.innerHTML = '';
+						test.append(newH1);
+					});
+			});
+
 			var translatePhoto =
 				'https://pixabay.com/api/?key=6336378-c6bc1f25ce36a86d62e91f43e&q=' +
 				wInput;
@@ -280,6 +304,14 @@ function russianFemale() {
 }
 /*====================END RUSSIAN FEMALE SPEAKING ================*/
 
+/*====================GREEK FEMALE SPEAKING ===================*/
+
+function greekFemale() {
+    var x = document.getElementById("tWordGreek").previousSibling.innerText;
+    responsiveVoice.speak(x, "Greek Female");
+}
+/*====================END GREEK FEMALE SPEAKING ================*/
+
 function speakAllTheLanguages() {
 spanishFemale();
 frenchFemale();
@@ -288,7 +320,8 @@ germanFemale();
 chineseFemale();
 portFemale();
 italianFemale();
-russianFemale()
+russianFemale();
+greekFemale()
 
 }
 
