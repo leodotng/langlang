@@ -16,13 +16,13 @@ font-family: 'Open Sans', sans-serif;
 
 
 .fixpic{
-   width: 200px;
+   width: 400px;
    position: relative;
 }
 img {
   position: relative;
   max-width: 50%;
-  max-height: 200px;
+  max-height: 300px;
 }
 
 footer {
@@ -31,6 +31,11 @@ padding-top: 10px;
 
 #aftertranslate {
 padding-bottom: 15px;
+padding-top: 15px;
+}
+
+#toptranslate {
+padding-top: 15px;
 }
 
 .search-input {
