@@ -8,7 +8,7 @@ form.addEventListener('submit', event => {
 	var wInput = document.getElementById('w-input').value;
 	/* ======+ END MASTER VARIABLE FOR USER INPUT +====== */
 
-	/* SPANISH FETCH */
+	/* ======================= SPANISH FETCH ==========================*/
 	var endpointes =
 		'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-es&text=' + wInput;
 
@@ -20,12 +20,10 @@ form.addEventListener('submit', event => {
 			test.innerHTML = '';
 			test.append(newH1);
 
-
-
+/* ======================= END SPANISH FETCH ==========================*/
+/* ========================= FRENCH FETCH ============================*/
 			var endpointfr =
 				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-fr&text=' + wInput;
-
-			/* FRENCH FETCH */
 
 			fetch(endpointfr).then(response => {
 				return response
@@ -46,10 +44,11 @@ form.addEventListener('submit', event => {
 					});
 			});
 
-			/* JAPANESE FETCH */
+/* ======================= END FRENCH FETCH ===========================*/
+/* ========================= JAPANESE FETCH ===========================*/
 			var endpointja =
-				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ja&text=' +
-				wInput;
+				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ja&text=' + wInput;
+
 			fetch(endpointja).then(response => {
 				return response
 					.json()
@@ -69,11 +68,10 @@ form.addEventListener('submit', event => {
 					});
 			});
 
+/* ======================= END JAPANESE FETCH ===========================*/
+/* ========================= BEGIN GERMAN FETCH =========================*/
 			var endpointde =
-				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-de&text=' +
-				wInput;
-
-			/* GERMAN FETCH */
+				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-de&text=' + wInput;
 
 			fetch(endpointde).then(response => {
 				return response
@@ -94,10 +92,10 @@ form.addEventListener('submit', event => {
 					});
 			});
 
-			/* CHINESE FETCH */
+/* ======================= END GERMAN FETCH ==========================*/
+/* ======================== BEGIN CHINESE FETCH ======================*/
 			var endpointzh =
-				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-zh&text=' +
-				wInput;
+				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-zh&text=' + wInput;
 			fetch(endpointzh).then(response => {
 				return response
 					.json()
@@ -116,11 +114,10 @@ form.addEventListener('submit', event => {
 						test.append(newH1);
 					});
 			});
-
-			/* PORTUGESE FETCH */
+/* ====================== END CHINESE FETCH =======================*/
+/* ==================== BEGIN PORTUGUESE FETCH ====================*/
 			var endpointpt =
-				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-pt&text=' +
-				wInput;
+				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-pt&text=' + wInput;
 			fetch(endpointpt).then(response => {
 				return response
 					.json()
@@ -140,10 +137,11 @@ form.addEventListener('submit', event => {
 					});
 			});
 
-			/* ITALIAN FETCH */
+/* ====================== END PORTUGUSES FETCH =======================*/
+ /* ==================== BEGIN ITALIAN FETCH ========================*/
 			var endpointit =
-				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-it&text=' +
-				wInput;
+				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-it&text=' + wInput;
+
 			fetch(endpointit).then(response => {
 				return response
 					.json()
@@ -162,10 +160,10 @@ form.addEventListener('submit', event => {
 						test.append(newH1);
 					});
 			});
-			/* RUSSIAN FETCH */
+/* ====================== END ITALIAN FETCH ============================*/
+/* ==================== BEGIN RUSSIAN FETCH ========================*/
 			var endpointru =
-				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ru&text=' +
-				wInput;
+				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ru&text=' + wInput;
 
 			fetch(endpointru).then(response => {
 				return response
@@ -185,11 +183,10 @@ form.addEventListener('submit', event => {
 						test.append(newH1);
 					});
 			});
-
-			/* GREEK FETCH */
+/* ====================== END RUSSIAN FETCH ======================*/
+/* ==================== BEGIN GREEK FETCH ========================*/
 			var endpointel =
-				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-el&text=' +
-				wInput;
+				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-el&text=' + wInput;
 
 			fetch(endpointel).then(response => {
 				return response
@@ -209,7 +206,8 @@ form.addEventListener('submit', event => {
 						test.append(newH1);
 					});
 			});
-
+/* ====================== END GREEK FETCH =======================*/
+/* ==================== BEGIN PHOTO FETCH ========================*/
 			var translatePhoto =
 				'https://pixabay.com/api/?key=6336378-c6bc1f25ce36a86d62e91f43e&q=' +
 				wInput;
@@ -228,7 +226,7 @@ form.addEventListener('submit', event => {
 		});
 	});
 });
-
+/* ==================== END PHOTO FETCH ========================*/
 /*====================TEXT TO SPEAK ===================*/
 
 
@@ -318,7 +316,7 @@ russianFemale();
 greekFemale()
 
 }
-/*====================END ONE CLICK FIRES OFF ALL LANGUAGES ================*/
+/*====================END ONE CLICK FIRES OFF ALL LANGUAGES =============*/
 
 
 
