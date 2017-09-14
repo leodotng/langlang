@@ -1,6 +1,11 @@
+
 html {
 font-family: 'Open Sans', sans-serif;
 }
+body {
+  align-self: center;
+}
+
 input[type="text"] {
     font-size:35px;
 }
