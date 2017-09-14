@@ -1,13 +1,9 @@
 html {
-
 font-family: 'Open Sans', sans-serif;
-
 }
-
 input[type="text"] {
     font-size:35px;
 }
-
 .fixpic{
    width: 400px;
    position: relative;
@@ -17,45 +13,20 @@ img {
   max-width: 50%;
   max-height: 300px;
 }
-
 footer {
 padding-top: 10px;
 }
-
 #aftertranslate {
 padding-bottom: 30px;
 }
-
 #aftertranslate-two {
 padding-top: 35px;
 position: relative;
 padding-bottom: 30px;
 }
-
 #toptranslate {
 padding-top: 15px;
 }
-
 .search-input {
 width: 80vw;
-
 }
-
-
-
-/*.fixpic {
-max-width: 50px;
-max-height: 50px;
-}*/
-
-/*p {
-
-  text: white;
-
-}
-
-.maincss {
-
-  text: white;
-
-}*/

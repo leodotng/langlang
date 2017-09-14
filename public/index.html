@@ -2,345 +2,275 @@
 <html>
   <head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="semantic.min.css">
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script src="semantic.min.js"></script>
-<link rel="stylesheet" type="text/css" href="main.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>LangLang.io</title>
+    <!-- CREATED BY JOSH LEONG g64 Galvanize gSchool Q1 Project http://josh.leo.ng -->
+  </head>
 
-</head>
-
-<nav>
-      <div class="ui segment massive menu">
-      <i class="align justify huge icon" align="left" onclick="$('.ui.labeled.icon.sidebar').sidebar('toggle');"></i>
-        <div class="right menu">
-          <div class="ui dropdown item">
-          <div class="ui primary button">Login</div>
-            <div class="menu">
-
-            </div>
-
-            </div>
+  <nav>
+        <div class="ui segment massive menu">
+            <i class="align justify huge icon" align="left" onclick="$('.ui.labeled.icon.sidebar').sidebar('toggle');"></i>
+            <div class="right menu">
+              <div class="ui dropdown item">
+                <div class="ui primary button">Login</div>
+                  <div class="menu">
+                  </div>
+                </div>
               <div class="item">
               <div class="ui primary button">Sign Up</div>
               </div>
               </div>
             </div>
-</nav>
-<div class="ui left demo vertical inverted sidebar labeled icon menu">
-  <a class="item">
-    <i class="home icon"></i>
-    Home
-  </a>
-  <a class="item">
-    <i class="block layout icon"></i>
-    Signup
-  </a>
-  <a class="item">
-    <i class="smile icon"></i>
-    Login
-  </a>
-</div>
+  </nav>
+      <div class="ui left demo vertical inverted sidebar labeled icon menu">
+          <a class="item">
+            <i class="home icon"></i>Home</a>
+          <a class="item"> <i class="block layout icon"></i>Signup</a>
+          <a class="item"><i class="smile icon"></i>Login</a>
+      </div>
 
-
-
-
-  <body><center>
+<body><center>
 
     <div class="ui segment">
-<img src="langlang.png" height="200" width="200"><br>
-
-<!--     Title [HERE]   -->
-<img src="logo.png"><br>
-  <h2><strong><p id="aftertranslate"> LangLang the Loris Helps You Learn Lots of Languages At The Same Time!</p></h2></strong>
-</div>
-</div>
-<header class="ui segment">
-
-
-<!--     END LOGO [HERE]   -->
-<!-- <div class="ui grid two wide column centered">
-<div class="ui image two wide column" id="container">
-      <div class="fixpic two wide column" id="photoSpot">
+      <!--  Title [HERE]   -->
+        <img src="langlang.png" height="200" width="200"><br>
+        <img src="logo.png"><br>
+            <h2><strong><p id="aftertranslate">LangLang the Loris Helps You Learn Lots of Languages At The Same Time!</p></h2></strong>
+    </div>
       </div>
--->
+<header class="ui segment">
+        <div class="ui">
+          <div class="content">
+            <div class="meta"></div>
+              <div class="container description fixpic" id="photoSpot">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+<br><br>
+<!-- BEGIN SECTION WITHIN HEADER -->
+<section class="ui stackable two grid centered">
+      <div class="centered" id="aftertranslate">
+        <!-- SEARCH INPUT FIELD [HERE]   -->
+            <form method="get" id="form" class="ui massive search icon input">
+                <input class="input search-input" type="text" id="w-input" placeholder="Enter Word Here"></input><i class="search icon"></i>
+        <!-- END SEARCH INPUT FIELD [HERE]   -->
+      </div>
+            <div class="centered">
+              <button type="submit" label="translate" class="ui massive primary basic button" id="aftertranslate-two">TRANSLATE</button>
+            </div>
+            </form>
+</section>
+<!-- END SECTION WITHIN HEADER -->
+</header>
+<!-- MAIN BEGINNING OF LANGUAGE CARDS -->
+<main class="ui stackable three column grid ui segment">
+    <!-- BEGINNING OF SPANISH LANGUAGE CARD -->
+      <section class="column">
+          <div class="ui centered card">
+          <div class="image">
+            <h1><i class="mexico flag"></i> SPANISH <i class="spain flag"></i></h1>
+          </div>
+          <div class="content" id="backgroundflag">
+            <img src="flags/spain.png">
+        <!-- SPANISH SPEAK BUTTON CODE -->
+        <p id="tWord"></p><p id="tWordSpanish"></p>
+        <button onclick="spanishFemale()" class="ui medium primary basic button">Speak</button>
+        <!-- END SPANISH SPEAK BUTTON CODE -->
+          </div>
+          </div>
+        </section>
+      <!-- END OF SPANISH LANGUAGE CARD -->
 
-      <div class="ui">
+      <!-- BEGINNING FRENCH LANGUAGE CARD -->
+      <section class="column">
+
+          <div class="ui centered card">
+          <div class="image">
+          <h1><i class="france flag"></i> FRENCH <i class="canada flag"></i></h1>
+          </div>
+          <div class="content">
+            <img src="flags/france.png">
+            <!-- FRENCH SPEAK BUTTON CODE -->
+            <p id="tWordTwo"></p><p id="tWordFrench"></p>
+            <button onclick="frenchFemale()" class="ui medium primary basic button">Speak</button>
+            <!-- END FRENCH SPEAK BUTTON CODE -->
+          </div>
+          </div>
+      </section>
+      <!-- BEGINNING JAPANESE LANGUAGE CARD -->
+      <section class="column">
+
+        <div class="ui centered card">
+          <div class="image">
+            <h1><i class="japan flag"></i> JAPANESE <i class="japan flag"></i></h1>
+          </div>
         <div class="content">
-          <!-- <div class="header">Photo</div> -->
-          <div class="meta"></div>
-          <div class="container description fixpic" id="photoSpot">
-            <p>
-            </p>
+          <img src="flags/japan.png">
+          <!-- JAPANESE SPEAK BUTTON CODE -->
+          <p id="tWordThree"></p><p id="tWordJapanese"></p>
+          <button onclick="japaneseFemale()" class="ui medium primary basic button">Speak</button>
+          <!-- END JAPANESE SPEAK BUTTON CODE -->
           </div>
         </div>
+
+    </section>
+      <!-- END JAPANESE LANGUAGE CARD -->
+
+        <!-- BEGINNING GERMAN LANGUAGE CARD -->
+    <section class="column">
+          <div class="ui centered card">
+            <div class="image">
+              <h1><i class="germany flag"></i> GERMAN <i class="germany flag"></i></h1>
+            </div>
+          <div class="content">
+            <img src="flags/germany.png">
+            <!-- GERMAN SPEAK BUTTON CODE -->
+            <p id="tWordFour"></p><p id="tWordGerman"></p>
+            <button onclick="germanFemale()" class="ui medium primary basic button">Speak</button>
+            <!-- END GERMAN SPEAK BUTTON CODE -->
+            </div>
+          </div>
+    </section>
+    <!-- END GERMAN LANGUAGE CARD -->
+
+      <!-- BEGINNING CHINESE LANGUAGE CARD -->
+
+    <section class="column">
+
+        <div class="ui centered card">
+          <div class="image">
+            <h1><i class="china flag"></i> CHINESE <i class="china flag"></i></h1>
+          </div>
+        <div class="content">
+          <img src="flags/china.png">
+          <!-- CHINESE SPEAK BUTTON CODE -->
+          <p id="tWordFive"></p><p id="tWordChinese"></p>
+          <button onclick="chineseFemale()" class="ui medium primary basic button">Speak</button>
+          <!-- END CHINESE SPEAK BUTTON CODE -->
+        </div>
       </div>
+    </section>
+    <!-- END CHINESE LANGUAGE CARD -->
 
-
-
-</div>
-</div>
-<br>
-
-<br>
-
-
-<section class="ui stackable two grid centered">
-<!--     SEARCH INPUT FIELD [HERE]   -->
-<div class="centered" id="aftertranslate">
-
-        <form method="get" id="form" class="ui massive search icon input">
-        <input class="input search-input" type="text" id="w-input" placeholder="Enter Word Here"></input><i class="search icon"></i>
-</div>
-<div class="centered">
-<!--     END SEARCH INPUT FIELD [HERE]   -->
-
-          <button type="submit" label="translate" class="ui massive primary basic button" id="aftertranslate-two">TRANSLATE</button>
-</div>
-
-        </form>
-
-
-</section>
-</header>
-
-<!-- BEGINNING OF CARDS -->
-<main class="ui stackable three column grid ui segment">
-
-<section class="column">
+      <!-- BEGINNING PORTUGUESE LANGUAGE CARD -->
+    <section class="column">
+        <div class="ui centered card">
+          <div class="image">
+            <h1><i class="brazil flag"></i>  PORTUGESE  <i class="portugal flag"></i></h1>
+        </div>
+        <div class="content">
+          <img src="flags/brazil.png">
+          <!-- PORTUGUESE SPEAK BUTTON CODE -->
+            <p id="tWordSix"></p><p id="tWordPort"></p>
+            <button onclick="portFemale()" class="ui medium primary basic button">Speak</button>
+          <!-- END PORTUGUESE SPEAK BUTTON CODE -->
+        </div>
+      </div>
+    </section>
+    <!-- END PORTUGUESE LANGUAGE CARD -->
+      <!-- BEGINNING ITALIAN LANGUAGE CARD -->
+    <section class="column">
+        <div class="ui centered card">
+          <div class="image">
+            <h1><i class="italy flag"></i> ITALIAN <i class="italy flag"></i></h1>
+          </div>
+      <div class="content">
+          <img src="flags/italy.png">
+          <!-- ITALIAN SPEAK BUTTON CODE -->
+          <p id="tWordSeven"></p><p id="tWordItalian"></p>
+          <button onclick="italianFemale()" class="ui medium primary basic button">Speak</button>
+          <!-- END ITALIAN SPEAK BUTTON CODE -->
+        </div>
+      </div>
+    </section>
+  <!-- END ITALIAN LANGUAGE CARD -->
+    <!-- BEGINNING RUSSIAN LANGUAGE CARD -->
+    <section class="column">
         <div class="ui centered card">
         <div class="image">
-  <h1><i class="mexico flag"></i> SPANISH <i class="spain flag"></i></h1>
+          <h1><i class="russia flag"></i> RUSSIAN <i class="russia flag"></i></h1>
         </div>
-        <div class="content" id="backgroundflag">
-<img src="flags/spain.png">
-      <!-- SPANISH SPEAK BUTTON CODE -->
-      <p id="tWord"></p><p id="tWordSpanish"></p>
-      <button onclick="spanishFemale()" class="ui medium primary basic button">Speak</button>
-      <!-- END SPANISH SPEAK BUTTON CODE -->
+        <div class="content">
+          <img src="flags/russia.png">
+          <!-- RUSSIAN SPEAK BUTTON CODE -->
+          <p id="tWordEight"></p><p id="tWordRussian"></p>
+          <button onclick="russianFemale()" class="ui medium primary basic button">Speak</button>
+          <!-- END RUSSIA SPEAK BUTTON CODE -->
         </div>
       </div>
-
-
-</section>
-
-
-<section class="column">
-
-  <div class="ui centered card">
-  <div class="image">
-  <h1><i class="france flag"></i> FRENCH <i class="canada flag"></i></h1>
-  </div>
-  <div class="content">
-    <img src="flags/france.png">
-    <!-- FRENCH SPEAK BUTTON CODE -->
-    <p id="tWordTwo"></p><p id="tWordFrench"></p>
-    <button onclick="frenchFemale()" class="ui medium primary basic button">Speak</button>
-    <!-- END FRENCH SPEAK BUTTON CODE -->
-  </div>
-</div>
-
-
-</section>
-
-
-<section class="column">
-
-  <div class="ui centered card">
-  <div class="image">
-  <h1><i class="japan flag"></i> JAPANESE <i class="japan flag"></i></h1>
-  </div>
-  <div class="content">
-    <img src="flags/japan.png">
-    <!-- JAPANESE SPEAK BUTTON CODE -->
-    <p id="tWordThree"></p><p id="tWordJapanese"></p>
-    <button onclick="japaneseFemale()" class="ui medium primary basic button">Speak</button>
-    <!-- END JAPANESE SPEAK BUTTON CODE -->
-  </div>
-</div>
-
-
-</section>
-<br>
-<section class="column">
-
-  <div class="ui centered card">
-  <div class="image">
-  <h1><i class="germany flag"></i> GERMAN <i class="germany flag"></i></h1>
-  </div>
-  <div class="content">
-    <img src="flags/germany.png">
-    <!-- GERMAN SPEAK BUTTON CODE -->
-    <p id="tWordFour"></p><p id="tWordGerman"></p>
-    <button onclick="germanFemale()" class="ui medium primary basic button">Speak</button>
-    <!-- END GERMAN SPEAK BUTTON CODE -->
-  </div>
-</div>
-
-
-</section>
-
-
-<section class="column">
-
-  <div class="ui centered card">
-  <div class="image">
-    <h1><i class="china flag"></i> CHINESE <i class="china flag"></i></h1>
-  </div>
-  <div class="content">
-    <img src="flags/china.png">
-    <!-- CHINESE SPEAK BUTTON CODE -->
-    <p id="tWordFive"></p><p id="tWordChinese"></p>
-    <button onclick="chineseFemale()" class="ui medium primary basic button">Speak</button>
-    <!-- END CHINESE SPEAK BUTTON CODE -->
-  </div>
-</div>
-
-
-</section>
-
-
-<section class="column">
-
-  <div class="ui centered card">
-  <div class="image">
-  <h1><i class="brazil flag"></i>  PORTUGESE  <i class="portugal flag"></i></h1>
-  </div>
-  <div class="content">
-    <img src="flags/brazil.png">
-    <!-- PORTUGUESE SPEAK BUTTON CODE -->
-    <p id="tWordSix"></p><p id="tWordPort"></p>
-    <button onclick="portFemale()" class="ui medium primary basic button">Speak</button>
-    <!-- END PORTUGUESE SPEAK BUTTON CODE -->
-  </div>
-</div>
-
-
-</section>
-
-
-<section class="column">
-
-  <div class="ui centered card">
-  <div class="image">
-    <h1><i class="italy flag"></i> ITALIAN <i class="italy flag"></i></h1>
-  </div>
-  <div class="content">
-    <img src="flags/italy.png">
-    <!-- ITALIAN SPEAK BUTTON CODE -->
-    <p id="tWordSeven"></p><p id="tWordItalian"></p>
-    <button onclick="italianFemale()" class="ui medium primary basic button">Speak</button>
-    <!-- END ITALIAN SPEAK BUTTON CODE -->
-  </div>
-</div>
-
-
-</section>
-
-<section class="column">
-
-  <div class="ui centered card">
-  <div class="image">
-    <h1><i class="russia flag"></i> RUSSIAN <i class="russia flag"></i></h1>
-  </div>
-  <div class="content">
-    <img src="flags/russia.png">
-    <!-- RUSSIAN SPEAK BUTTON CODE -->
-    <p id="tWordEight"></p><p id="tWordRussian"></p>
-    <button onclick="russianFemale()" class="ui medium primary basic button">Speak</button>
-    <!-- END RUSSIA SPEAK BUTTON CODE -->
-  </div>
-</div>
-
-
-</section>
-
-<section class="column">
-
-  <div class="ui centered card">
-  <div class="image">
-  <h1><i class="greece flag"></i> GREEK <i class="greece flag"></i></h1>
-  </div>
-  <div class="content">
-    <img src="flags/greece.png">
-    <!-- GREEK SPEAK BUTTON CODE -->
-    <p id="tWordNine"></p><p id="tWordGreek"></p>
-    <button onclick="greekFemale()" class="ui medium primary basic button">Speak</button>
-    <!-- END GREEK SPEAK BUTTON CODE -->
-  </div>
-</div>
-
-
-</section>
-
-
-</div>
-
-
+    </section>
+    <!-- END RUSSIAN LANGUAGE CARD -->
+      <!-- BEGINNING GREEK LANGUAGE CARD -->
+    <section class="column">
+      <div class="ui centered card">
+      <div class="image">
+        <h1><i class="greece flag"></i> GREEK <i class="greece flag"></i></h1>
+      </div>
+      <div class="content">
+        <img src="flags/greece.png">
+        <!-- GREEK SPEAK BUTTON CODE -->
+        <p id="tWordNine"></p><p id="tWordGreek"></p>
+        <button onclick="greekFemale()" class="ui medium primary basic button">Speak</button>
+        <!-- END GREEK SPEAK BUTTON CODE -->
+      </div>
+      </div>
+    </section>
+    <!-- END GREEK LANGUAGE CARD -->
 </main>
+<!-- END ALL LANGUAGE CARDS -->
 
+<!-- BEGIN FOOTER -->
+  <footer class="ui segments ui stackable three column grid" id="aftertranslate">
+      <!-- BEGIN YANDEX API DISPLAY REQUIREMENTS -->
+        <div class="ui column">
+            <div class="">
+              <h3 class="maincss"> Powered by Yandex.Translate </h3><br>
+            <img src="yandex.png" height="70" width="150">
+              <h3><a href="http://translate.yandex.com/">http://translate.yandex.com/</a></h3>
+            </div>
+        </div>
+      <!-- END YANDEX API DISPLAY REQUIREMENTS -->
 
-<footer class="ui segments ui stackable three column grid" id="aftertranslate">
-
-
-<div class="ui column">
-      <div class="">
-        <h3 class="maincss"> Powered by Yandex.Translate </h3><br>
-          <img src="yandex.png" height="70" width="150">
-          <h3><a href="http://translate.yandex.com/">http://translate.yandex.com/</a></h3>
+  <!-- SPEAK ALL BUTTON CODE -->
+    <div class="ui column">
+        <div class="" id="aftertranslate">
+        <button onclick="speakAllTheLanguages()" class="ui massive primary basic button">SPEAK ALL</button>
       </div>
-</div>
-<!-- END YANDEX API DISPLAY REQUIREMENTS -->
+  <!-- END SPEAK ALL BUTTON CODE -->
 
-<!-- SPEAK ALL BUTTON CODE -->
-  <div class="ui column">
-      <div class="" id="aftertranslate">
-      <button onclick="speakAllTheLanguages()" class="ui massive primary basic button">SPEAK ALL</button>
+  <!-- BEGIN REFRESH PAGE BUTTON -->
+          <div class="column" id="aftertranslate">
+            <button type="button" value="Refresh Page" onClick="window.location.reload()" class="ui massive primary basic button">RESET</button>
+          </div>
+  <!-- END REFRESH PAGE BUTTON -->
+  <!-- BEGIN JUMP TO TOP PAGE BUTTON -->
+          <div class="column" id="aftertranslate">
+            <button type="button" value="Refresh Page" onClick="window.scrollTo(0, 0);" class="ui massive primary basic button">JUMP TO TOP</button>
+          </div>
+  <!-- END JUMP TO TOP PAGE BUTTON -->
     </div>
-<!-- END SPEAK ALL BUTTON CODE -->
-
-
-<!-- YANDEX API DISPLAY REQUIREMENTS -->
-        <div class="column" id="aftertranslate">
-          <button type="button" value="Refresh Page" onClick="window.location.reload()" class="ui massive primary basic button">RESET</button>
-        </div>
-
-        <div class="column" id="aftertranslate">
-          <button type="button" value="Refresh Page" onClick="window.scrollTo(0, 0);" class="ui massive primary basic button">JUMP TO TOP</button>
-        </div>
-</div>
-
-
-<div>
+<!-- END BUTTONS   -->
 <!-- BEGIN RESPONSIVEJS API DISPLAY REQUIREMENTS -->
-      <div class="column">
-          <h3 class="maincss" id="toptranslate"> Voice Speech Powered by ResponsiveVoiceJS </h3><br>
-            <img src="rvlogo.png" height="70" width="100">
-            <h3 class="maincss"><a href="https://responsivevoice.org/">https://responsivevoice.org/</a></h3>
-<!-- END RESPONSIVEJS API DISPLAY REQUIREMENTS -->
-      </div>
-</div>
-
-<!-- SEMANTIC HTML TAGS TO USE
-
-<section>
-<article>
-<details>
-
-
-<mark>
-<nav>
-<section>
-<summary>
-
--->
-  <script src="app.js" charset="utf-8"></script>
-  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
-  <script src="cdl-utils.js"></script>
-</footer>
-</center>
+    <div>
+        <div class="column">
+            <h3 class="maincss" id="toptranslate"> Voice Speech Powered by ResponsiveVoiceJS </h3><br>
+              <img src="rvlogo.png" height="70" width="100">
+              <h3 class="maincss"><a href="https://responsivevoice.org/">https://responsivevoice.org/</a></h3>
+  <!-- END RESPONSIVEJS API DISPLAY REQUIREMENTS -->
+        </div>
+  </div>
+  <!-- JAVASCRIPT FILES TO INCLUDE -->
+    <script src="app.js" charset="utf-8"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="cdl-utils.js"></script>
+  </footer>
+  </center>
   </body>
 </html>
