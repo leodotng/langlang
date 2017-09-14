@@ -9,10 +9,10 @@ font-family: 'Open Sans', sans-serif;
   width: 250px;
 }*/
 
-#bgflag {
-  background-image: url("flagpng/044-spain.png");
+/*#backgroundflag {
+  background-image: url("flags/spain.png");
   position: relative;
-}
+}*/
 
 
 .fixpic{
@@ -21,7 +21,7 @@ font-family: 'Open Sans', sans-serif;
 }
 img {
   position: relative;
-  max-width: 100%;
+  max-width: 50%;
   max-height: 200px;
 }
 
@@ -31,6 +31,11 @@ padding-top: 10px;
 
 #aftertranslate {
 padding-bottom: 15px;
+}
+
+.search-input {
+width: 80vw;
+
 }
 
 
