@@ -7,22 +7,17 @@
   crossorigin="anonymous"></script>
 <script src="semantic.min.js"></script>
 <link rel="stylesheet" type="text/css" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <title>langlang.io</title>
+    <title>LangLang.io</title>
 
 </head>
 
 <nav>
-        <div class="ui massive menu">
+        <div class="ui segment massive menu">
         <i class="align justify huge icon" align="left"></i>
         <a class="active item">
           Home
-        </a>
-        <a class="item">
-          My Scoreboard
-        </a>
-        <a class="item">
-          About LangLang
         </a>
         <div class="right menu">
           <div class="ui dropdown item">
@@ -45,16 +40,17 @@
 
   <body><center>
 
-    <div class="">
+    <div class="ui segment">
 <img src="langlang.png" height="200" width="200"><br>
 
 <!--     Title [HERE]   -->
 <img src="logo.png"><br>
+  <h3><strong><p id="aftertranslate"> LangLang the Loris Helps You Learn Lots of Languages Simultaneously!</p></h3></strong>
 </div>
 </div>
-<header>
-  <h3><strong><p> LangLang the Loris Helps You Learn Lots of Languages Simultaneously!</p></h3></strong>
-</header>
+<header class="ui segment">
+
+
 <!--     END LOGO [HERE]   -->
 <!-- <div class="ui grid two wide column centered">
 <div class="ui image two wide column" id="container">
@@ -64,7 +60,7 @@
 
       <div class="ui card">
         <div class="content">
-          <div class="header">Photo</div>
+          <!-- <div class="header">Photo</div> -->
           <div class="meta"></div>
           <div class="container description fixpic" id="photoSpot">
             <p>
@@ -89,7 +85,7 @@
         <form method="get" id="form" class="ui massive search icon input">
         <input class="input" type="text" id="w-input" placeholder="Enter Word Here"></input><i class="search icon"></i>
 </div>
-<div class="centered">
+<div class="centered" id="aftertranslate">
 <!--     END SEARCH INPUT FIELD [HERE]   -->
 
           <button type="submit" label="translate" class="ui massive primary basic button">TRANSLATE</button>
@@ -99,15 +95,15 @@
 
 
 </section>
-
+</header>
 
 <!-- BEGINNING OF CARDS -->
-<main class="ui stackable three column grid">
+<main class="ui stackable three column grid ui segment">
 
 <section class="column">
         <div class="ui centered card">
         <div class="image">
-          SPANISH <i class="spain flag"></i>
+  <i class="mexico flag"></i> SPANISH <i class="spain flag"></i>
         </div>
         <div class="content">
 
@@ -126,7 +122,7 @@
 
   <div class="ui centered card">
   <div class="image">
-    FRENCH <i class="france flag"></i>
+  <i class="france flag"></i> FRENCH <i class="canada flag"></i>
   </div>
   <div class="content">
     <!-- FRENCH SPEAK BUTTON CODE -->
@@ -144,7 +140,7 @@
 
   <div class="ui centered card">
   <div class="image">
-    JAPANESE <i class="japan flag"></i>
+  <i class="japan flag"></i> JAPANESE <i class="japan flag"></i>
   </div>
   <div class="content">
     <!-- JAPANESE SPEAK BUTTON CODE -->
@@ -161,7 +157,7 @@
 
   <div class="ui centered card">
   <div class="image">
-    GERMAN <i class="germany flag"></i>
+  <i class="germany flag"></i> GERMAN <i class="germany flag"></i>
   </div>
   <div class="content">
     <!-- GERMAN SPEAK BUTTON CODE -->
@@ -179,7 +175,7 @@
 
   <div class="ui centered card">
   <div class="image">
-    CHINESE <i class="china flag"></i>
+    <i class="china flag"></i> CHINESE <i class="china flag"></i>
   </div>
   <div class="content">
     <!-- CHINESE SPEAK BUTTON CODE -->
@@ -215,7 +211,7 @@
 
   <div class="ui centered card">
   <div class="image">
-    ITALIAN <i class="italy flag"></i>
+    <i class="italy flag"></i> ITALIAN <i class="italy flag"></i>
   </div>
   <div class="content">
     <!-- ITALIAN SPEAK BUTTON CODE -->
@@ -232,7 +228,7 @@
 
   <div class="ui centered card">
   <div class="image">
-    RUSSIAN <i class="russia flag"></i>
+    <i class="russia flag"></i> RUSSIAN <i class="russia flag"></i>
   </div>
   <div class="content">
     <!-- RUSSIAN SPEAK BUTTON CODE -->
@@ -249,7 +245,7 @@
 
   <div class="ui centered card">
   <div class="image">
-    GREEK <i class="greece flag"></i>
+  <i class="greece flag"></i> GREEK <i class="greece flag"></i>
   </div>
   <div class="content">
     <!-- GREEK SPEAK BUTTON CODE -->
@@ -269,14 +265,14 @@
 </main>
 
 
-<footer>
+<footer class="ui segments" id="aftertranslate">
 
 <!-- SPEAK ALL BUTTON CODE -->
   <div class="ui stackable two column grid">
       <div class="column">
       <button onclick="speakAllTheLanguages()" class="ui massive primary basic button">Speak ALL</button>
     </div>
-<!-- END SPANISH SPEAK ALL BUTTON CODE -->
+<!-- END SPEAK ALL BUTTON CODE -->
 
 
 <!-- YANDEX API DISPLAY REQUIREMENTS -->

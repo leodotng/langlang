@@ -4,19 +4,13 @@ var photoSpot = document.getElementsByClassName('photoSpot');
 form.addEventListener('submit', event => {
 	event.preventDefault();
 
-	/* SPANISH FETCH */
+/* ======+ MASTER VARIABLE FOR USER INPUT +====== */
 	var wInput = document.getElementById('w-input').value;
+	/* ======+ END MASTER VARIABLE FOR USER INPUT +====== */
 
-/* THIS CODE USED FOR CHIENSE PINYIN TRANSLATION INCOMPLETE */
-// var endpointzhen = 'https://glosbe.com/gapi/translate?from=cmn&dest=eng&format=json&phrase=' + wInput;
-//
-// fetch endpointzhen.then(response => {
-// 	return response.json().then(translateDataZh =>
-/* THIS CODE USED FOR CHIENSE PINYIN TRANSLATION INCOMPLETE */
-
+	/* SPANISH FETCH */
 	var endpointes =
-		'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-es&text=' +
-		wInput;
+		'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-es&text=' + wInput;
 
 	fetch(endpointes).then(response => {
 		return response.json().then(translateData => {
@@ -29,8 +23,7 @@ form.addEventListener('submit', event => {
 
 
 			var endpointfr =
-				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-fr&text=' +
-				wInput;
+				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-fr&text=' + wInput;
 
 			/* FRENCH FETCH */
 
@@ -312,6 +305,7 @@ function greekFemale() {
 }
 /*====================END GREEK FEMALE SPEAKING ================*/
 
+/*====================ONE CLICK FIRES OFF ALL LANGUAGES ================*/
 function speakAllTheLanguages() {
 spanishFemale();
 frenchFemale();
@@ -324,9 +318,18 @@ russianFemale();
 greekFemale()
 
 }
+/*====================END ONE CLICK FIRES OFF ALL LANGUAGES ================*/
 
 // CdlUtils.getSvgPathStrings('你', {
 //   apiKey: 'aIVBim6xCFr1EqE0XMwnzfUg'
 // }).then(function(pathStrings) {
 //   // do something exciting with the path strings! :D
 // });
+
+
+/* THIS CODE USED FOR CHIENSE PINYIN TRANSLATION INCOMPLETE */
+// var endpointzhen = 'https://glosbe.com/gapi/translate?from=cmn&dest=eng&format=json&phrase=' + wInput;
+//
+// fetch endpointzhen.then(response => {
+// 	return response.json().then(translateDataZh =>
+/* THIS CODE USED FOR CHIENSE PINYIN TRANSLATION INCOMPLETE */
