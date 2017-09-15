@@ -1,9 +1,10 @@
 var form = document.getElementById('form');
 var photoSpot = document.getElementsByClassName('photoSpot');
 
+/* ======+ THIS addEventListener gets the button click +====== */
 form.addEventListener('submit', event => {
 	event.preventDefault();
-
+/* ======+ END CLICK LISTENER +====== */
 /* ======+ MASTER VARIABLE FOR USER INPUT +====== */
 	var wInput = document.getElementById('w-input').value;
 	/* ======+ END MASTER VARIABLE FOR USER INPUT +====== */
@@ -22,23 +23,16 @@ form.addEventListener('submit', event => {
 
 /* ======================= END SPANISH FETCH ==========================*/
 /* ========================= FRENCH FETCH ============================*/
-			var endpointfr =
+	var endpointfr =
 				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-fr&text=' + wInput;
 
 			fetch(endpointfr).then(response => {
 				return response
 					.json()
 					.then(translateDataTwo => {
-						var newH1 = document.createElement(
-							'h1'
-						);
-						newH1.innerHTML =
-							translateDataTwo.text[
-								'0'
-							];
-						var test = document.getElementById(
-							'tWordTwo'
-						);
+						var newH1 = document.createElement('h1');
+						newH1.innerHTML = translateDataTwo.text['0'];
+						var test = document.getElementById('tWordTwo');
 						test.innerHTML = '';
 						test.append(newH1);
 					});
@@ -46,30 +40,24 @@ form.addEventListener('submit', event => {
 
 /* ======================= END FRENCH FETCH ===========================*/
 /* ========================= JAPANESE FETCH ===========================*/
-			var endpointja =
+		var endpointja =
 				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ja&text=' + wInput;
 
 			fetch(endpointja).then(response => {
 				return response
 					.json()
 					.then(translateDataThree => {
-						var newH1 = document.createElement(
-							'h1'
-						);
+						var newH1 = document.createElement('h1');
 						newH1.innerHTML =
-							translateDataThree.text[
-								'0'
-							];
-						var test = document.getElementById(
-							'tWordThree'
-						);
+							translateDataThree.text['0'];
+						var test = document.getElementById('tWordThree');
 						test.innerHTML = '';
 						test.append(newH1);
 					});
 			});
 
-/* ======================= END JAPANESE FETCH ===========================*/
-/* ========================= BEGIN GERMAN FETCH =========================*/
+/* ==================== END JAPANESE FETCH ======================*/
+/* =================== BEGIN GERMAN FETCH =======================*/
 			var endpointde =
 				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-de&text=' + wInput;
 
@@ -77,39 +65,26 @@ form.addEventListener('submit', event => {
 				return response
 					.json()
 					.then(translateDataFour => {
-						var newH1 = document.createElement(
-							'h1'
-						);
-						newH1.innerHTML =
-							translateDataFour.text[
-								'0'
-							];
-						var test = document.getElementById(
-							'tWordFour'
-						);
+						var newH1 = document.createElement('h1');
+						newH1.innerHTML = translateDataFour.text['0'];
+						var test = document.getElementById('tWordFour');
 						test.innerHTML = '';
 						test.append(newH1);
 					});
 			});
 
-/* ======================= END GERMAN FETCH ==========================*/
-/* ======================== BEGIN CHINESE FETCH ======================*/
+/* ======================= END GERMAN FETCH =========================*/
+/* ======================= BEGIN CHINESE FETCH ======================*/
 			var endpointzh =
 				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-zh&text=' + wInput;
 			fetch(endpointzh).then(response => {
 				return response
 					.json()
 					.then(translateDataFive => {
-						var newH1 = document.createElement(
-							'h1'
-						);
+						var newH1 = document.createElement('h1');
 						newH1.innerHTML =
-							translateDataFive.text[
-								'0'
-							];
-						var test = document.getElementById(
-							'tWordFive'
-						);
+							translateDataFive.text['0'];
+						var test = document.getElementById('tWordFive');
 						test.innerHTML = '';
 						test.append(newH1);
 					});
@@ -160,7 +135,7 @@ form.addEventListener('submit', event => {
 						test.append(newH1);
 					});
 			});
-/* ====================== END ITALIAN FETCH ============================*/
+/* ====================== END ITALIAN FETCH =======================*/
 /* ==================== BEGIN RUSSIAN FETCH ========================*/
 			var endpointru =
 				'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170908T053655Z.87f4c706c2741f07.fdc80dc56fa59728c399270343443eacb394ecfc&lang=en-ru&text=' + wInput;
@@ -303,7 +278,7 @@ function greekFemale() {
 }
 /*====================END GREEK FEMALE SPEAKING ================*/
 
-/*====================ONE CLICK FIRES OFF ALL LANGUAGES ================*/
+/*=================ONE CLICK FIRES OFF ALL LANGUAGES ================*/
 function speakAllTheLanguages() {
 spanishFemale();
 frenchFemale();
@@ -316,7 +291,7 @@ russianFemale();
 greekFemale()
 
 }
-/*====================END ONE CLICK FIRES OFF ALL LANGUAGES =============*/
+/*===============END ONE CLICK FIRES OFF ALL LANGUAGES =============*/
 
 
 
