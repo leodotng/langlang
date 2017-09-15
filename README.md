@@ -1,7 +1,14 @@
-# CSS  Distribution
 
-This repository is automatically synced with the main [Semantic UI](https://github.com/Semantic-Org/Semantic-UI) repository to provide lightweight CSS only version of Semantic UI.
+# LangLang.io
+###LangLang the Loris helps you learn lots of languages at the same time!
 
-This package **does not support theming** and includes generated CSS files of the default theme only.
 
-You can view more on Semantic UI at [LearnSemantic.com](http://www.learnsemantic.com) and [Semantic-UI.com](http://www.semantic-ui.com)
+
+
+
+Motivation (why you made it)
+Where to find the deployed app
+Sceenshots
+Link to walkthrough video
+What API's you used
+Features of the web app [LearnSemantic.com](http://www.learnsemantic.com) and [Semantic-UI.com](http://www.semantic-ui.com)
