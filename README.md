@@ -9,7 +9,7 @@ Deployed App:
 [LangLang.io](http://www.langlang.io)
 
 Screenshots
-![Screen Shot](https://github.com/leodotng/langlang/blob/master/public/ScreenShot1.png=250x250)
+![Screen Shot](https://github.com/leodotng/langlang/blob/master/public/ScreenShot1.png | width=200)
 
 
 
