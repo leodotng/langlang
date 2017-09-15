@@ -7,6 +7,7 @@ My mother in law didn't speak english when I first met her. I knew I was going t
 
 Deployed App:
 [LangLang.io](http://www.langlang.io)
+[LangLang firebase app](https://langlang-4072a.firebaseapp.com/)
 
 Screenshots
 
