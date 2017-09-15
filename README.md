@@ -28,15 +28,14 @@ LangLang takes a users's input from the search field and translates it into 9 di
 * Russian
 * Greek
 
-Translations Powered by Yandex.Translate
+**Translations Powered by Yandex.Translate**
 [Yandex](http://translate.yandex.com/)
 
-Spoken Text to Speech Powered by ResponsiveVoiceJS
+**Spoken Text to Speech Powered by ResponsiveVoiceJS**
 [ResponsiveVoiceJS](https://responsivevoice.org/api/)
 
-Pixabay Photo API
+**Pixabay Photo API**
 [Pixabay](https://pixabay.com/api/docs/)
 
-
-Front End Framework:
+**Front End Framework:**
 [Semantic-UI.com](http://www.semantic-ui.com)
