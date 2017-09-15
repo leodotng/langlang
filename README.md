@@ -11,10 +11,7 @@ Deployed App:
 
 Screenshots
 
-![Imgur](https://i.imgur.com/ht3s2Y0.png)
 ![Imgur](https://i.imgur.com/FpJz6AU.png)
-
-
 
 Link to walkthrough video
 
