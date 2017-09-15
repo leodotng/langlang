@@ -97,16 +97,10 @@ form.addEventListener('submit', event => {
 				return response
 					.json()
 					.then(translateDataSix => {
-						var newH1 = document.createElement(
-							'h1'
-						);
+						var newH1 = document.createElement('h1');
 						newH1.innerHTML =
-							translateDataSix.text[
-								'0'
-							];
-						var test = document.getElementById(
-							'tWordSix'
-						);
+							translateDataSix.text['0'];
+						var test = document.getElementById('tWordSix');
 						test.innerHTML = '';
 						test.append(newH1);
 					});
@@ -121,16 +115,10 @@ form.addEventListener('submit', event => {
 				return response
 					.json()
 					.then(translateDataSeven => {
-						var newH1 = document.createElement(
-							'h1'
-						);
+						var newH1 = document.createElement('h1');
 						newH1.innerHTML =
-							translateDataSeven.text[
-								'0'
-							];
-						var test = document.getElementById(
-							'tWordSeven'
-						);
+							translateDataSeven.text['0'];
+						var test = document.getElementById('tWordSeven');
 						test.innerHTML = '';
 						test.append(newH1);
 					});
@@ -144,16 +132,9 @@ form.addEventListener('submit', event => {
 				return response
 					.json()
 					.then(translateDataEight => {
-						var newH1 = document.createElement(
-							'h1'
-						);
-						newH1.innerHTML =
-							translateDataEight.text[
-								'0'
-							];
-						var test = document.getElementById(
-							'tWordEight'
-						);
+						var newH1 = document.createElement('h1');
+						newH1.innerHTML = translateDataEight.text['0'];
+						var test = document.getElementById('tWordEight');
 						test.innerHTML = '';
 						test.append(newH1);
 					});
@@ -167,16 +148,9 @@ form.addEventListener('submit', event => {
 				return response
 					.json()
 					.then(translateDataNine => {
-						var newH1 = document.createElement(
-							'h1'
-						);
-						newH1.innerHTML =
-							translateDataNine.text[
-								'0'
-							];
-						var test = document.getElementById(
-							'tWordNine'
-						);
+						var newH1 = document.createElement('h1');
+						newH1.innerHTML = translateDataNine.text['0'];
+						var test = document.getElementById('tWordNine');
 						test.innerHTML = '';
 						test.append(newH1);
 					});
@@ -191,8 +165,6 @@ form.addEventListener('submit', event => {
 					//console.log(photoOutput);
 					var newImage = document.createElement('img');
 					newImage.setAttribute('src', photoOutput.hits['0'].webformatURL);
-
-
 					var test = document.getElementById('photoSpot');
           test.innerHTML = '';
 					test.append(newImage);
